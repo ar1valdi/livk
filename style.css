@@ -1,0 +1,56 @@
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Sans MS';
+}
+
+#content {
+    padding-top: 1vh;
+    width: 50vh;
+    height: 43vh;
+    background-color: rgba(240,240,240,0.8);
+    text-align: center;
+    border-radius: 5px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#content div {
+    flex: 1;
+    width: auto;
+    height: 3vh;
+    border-radius: 4px;
+    padding: 0.5vh;
+}
+
+#content img {
+    height: 28vh;
+    width: 28vh;
+    border-radius: 5px;
+}
+
+#buttons div {
+    height: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#yes_button {
+    background-color: lightgreen;
+    border-color: lightgreen;   
+}
+
+#no_button {
+    background-color: lightcoral;
+    border-color: lightcoral;
+}

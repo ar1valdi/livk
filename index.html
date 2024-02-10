@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Idk cos robie</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div id="content">
+        <img id="obrazek" src="kot1.png"/>
+        <h2 id="text">Będziesz moją walentynką??</h2>
+        <div id="buttons">
+            <div id="yes_button">TAK<33</div>
+            <div id="no_button">nie:(</div>
+        </div>
+    </div>
+
+    <script>
+        var button = document.getElementById("no_button");
+        var buttonY = document.getElementById("yes_button");
+        var obr = document.getElementById("obrazek");
+        var t = document.getElementById("text");
+
+        button.addEventListener("click", function() {
+            button.remove();
+            obr.src = "pistol.jpg";
+        });
+
+        
+        buttonY.addEventListener("click", function() {
+            buttonY.remove();
+            button.remove();
+            obr.src = "cuddle.jpg";
+            t.innerHTML = "us<333";
+            document.getElementById("content").style.height = "37vh";
+        });
+    </script>
+</body>
+</html>
